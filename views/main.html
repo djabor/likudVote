@@ -1,0 +1,120 @@
+<div class="container">
+	<div id="formStep1" class="form-horizontal" ng-show="formState">
+		<form name="step1" >
+			<div class="control-group">
+				<label class="control-label">opt1</label>
+				<div class="controls">
+					<input type="checkbox" name="preference" value="opt1" ng-model="formData.opt1"/>
+				</div>
+			</div>
+			<div class="control-group">
+				<label class="control-label">opt2</label>
+				<div class="controls">
+					<input type="checkbox" name="preference" value="opt1" ng-model="formData.opt2"/>
+				</div>
+			</div>
+			<div class="control-group">
+				<label class="control-label">opt3</label>
+				<div class="controls">
+					<input type="checkbox" name="preference" value="opt1" ng-model="formData.opt3"/>
+				</div>
+			</div>
+			<div class="control-group">
+				<label class="control-label">opt4</label>
+				<div class="controls">
+					<input type="checkbox" name="preference" value="opt1" ng-model="formData.opt4"/>
+				</div>
+			</div>
+			<div class="control-group">
+				<label class="control-label">opt5</label>
+				<div class="controls">
+					<input type="checkbox" name="preference" value="opt1" ng-model="formData.opt5"/>
+				</div>
+			</div>
+			<div class="control-group">
+				<label class="control-label">opt6</label>
+				<div class="controls">
+					<input type="checkbox" name="preference">
+				</div>
+			</div>
+			<div class="row">
+				<div class="span5"></div>
+				<div class="span5">
+					<button class="btn btn-success" ng-click="next()">next</button>
+				</div>
+			</div>
+		</form>
+	</div>
+	<div id="formStep2" ng-hide="formState">
+		<form name="step2" class="form-horizontal">
+			<div class="row">
+				<div class="span5">
+					<div class="control-group">
+						<label class="control-label">opt1</label>
+						<div class="controls">
+							<input type="text" name="firstName" ng-model="formData.firstName"/>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="span5">
+					<div class="control-group">
+						<label class="control-label">opt1</label>
+						<div class="controls">
+							<input type="text" name="lastName" ng-model="formData.lastName"/>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="span">
+					<div class="control-group">
+						<label class="control-label">opt1</label>
+						<div class="controls">
+							<input type="text" name="address" ng-model="formData.address"/>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="span5">
+					<div class="control-group">
+						<label class="control-label">opt1</label>
+						<div class="controls">
+							<select name="year"></select>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="span5">
+					<div class="control-group">
+						<label class="control-label">opt1</label>
+						<div class="controls">
+							<input type="text" name="firstName" ng-model="formData.lastName"/>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row form-inline">
+				<div class="span5">
+					<label class="control-label">opt1</label>
+					<div class="control-group">
+						<label>asdsad</label>
+						<input type="radio" name="firstName"/>
+						<label>asdsad</label>
+						<input type="radio" name="firstName"/>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="span5"></div>
+				<div class="span5">
+					<button class="btn btn-danger" ng-click="prev()">prev</button>
+					<button class="btn btn-success">submit</button>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>
